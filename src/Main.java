@@ -15,11 +15,12 @@ public class Main {
             int option = Input.input();
             if(option == 1) {
                 User user = Input.inputUser();
-                String w = NewRegister.Register(user);
-                System.out.println(w);
-            } else if(option == 2)  ;
-            break;
-//            if(option == 9)  break;
+                String message = NewRegister.Register(user);
+                System.out.println(message);
+            } else if(option == 2) {
+                ShowUsers.displayUsers();
+            }
+            if(option == 9)  break;
         }
     }
 }
